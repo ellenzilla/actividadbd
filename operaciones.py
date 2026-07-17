@@ -11,8 +11,8 @@ def agregar_producto(nombre, cantidad, precio):
         valores = (nombre, cantidad, precio)
         
         cursor.execute(sql, valores)
-        # TODO: Guarda los cambios
-        bd.___()
+
+        bd.commit()
         print(f"Éxito: {nombre} guardado en la base de datos.")
         bd.close()
 
